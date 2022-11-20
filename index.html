@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.41.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <html data-theme="night"></html>
+
+    <title>Even Odd</title>
+</head>
+<body>
+    <!--
+        HTML document that contains an input text and two radio buttons named EVEN and ODD.
+        A JS program checks whether the number written in the input text is odd or even and turns on the corresponding radio button each time the mouse passes over the text field.
+    -->
+
+    <div class="hero min-h-screen bg-base-200">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <div class="text-center lg:text-left">
+            <h1 class="text-5xl font-bold">Even Odd</h1>
+          </div>
+          <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+            <div class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Number</span>
+                </label>
+                <input type="text" placeholder="Number" id="edtNumber" class="input input-bordered" />
+              </div>
+              <div id="alertError" class="badge badge-error gap-2"> <!--it's visible only in case of error-->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-4 h-4 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                error
+              </div>
+              <div class="divider"></div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Even Number</span> 
+                  <input type="radio" name="radio-10" id="bntEven" class="radio checked:bg-red-500" disabled />
+                </label>
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Odd Number</span> 
+                  <input type="radio" name="radio-10" id="bntOdd" class="radio checked:bg-blue-500" disabled/>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="main.js"></script>
+</body>
+</html>
